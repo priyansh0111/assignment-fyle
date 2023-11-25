@@ -1,0 +1,8 @@
+<div class="flex justify-center">
+    <div>
+        <form (ngSubmit)="onSubmit()" #myForm="ngForm">
+            <input type="text" name='name' [(ngModel)]="formData.name" required class="border-2 text-2xl my-2 border-black rounded-lg"><br>
+            <button type="submit" type="submit" [disabled]="!myForm.form.valid" class="bg-blue-400 p-1 px-2 rounded-md text-white mb-2">Search</button>
+        </form>
+    </div>
+</div>

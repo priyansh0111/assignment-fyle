@@ -1,0 +1,13 @@
+<div class="grid grid-cols-6 h-fit">
+    <div class="col-span-2 p-5 pl-10">
+        <img class='bio-pic p-3 rounded-full border-double border-2 border-gray-400' src={{avatar_url}} alt="">
+        <div>https:github.com/{{login}}</div>
+    </div>
+    <div class="col-span-4 font-bold my-auto mx-14">
+        <div class="text-3xl font-light">{{name}}</div>
+        <div class="my-2">{{bio}}</div>
+        <div class="my-2">{{location || 'NA'}}</div>
+        <div class="my-2">Twitter: https://twitter.com/{{xname}}</div>
+    </div>
+</div>
+<app-repolist></app-repolist>

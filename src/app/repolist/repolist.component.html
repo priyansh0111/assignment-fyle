@@ -1,0 +1,23 @@
+<div class="grid grid-cols-2">
+    <div *ngFor="let repo of currentlist" class="grid-cols-1 m-8 border-2 p-4 border-black">
+        <div class="text-3xl text-blue-400 my-1">{{repo.name}}</div>
+        <div class="font-bold my-1">{{repo.description || 'NA'}}</div>
+        <div class="my-1">
+            <button *ngFor="let lang of repo.languages_url" class="bg-blue-400 mx-1 p-1 px-3 rounded-md text-yellow-50">{{lang}}</button>
+        </div>
+    </div>
+</div>
+<div class="flex justify-center">
+    <button (click)="onPageforward($event)" name='<' class="p-2 px-3 text-blue-400 border-2 border-gray-400"><</button>
+    <button (click)="onPageforward($event)" name='1' class="p-2 px-3 text-blue-400 border-2 border-gray-400">1</button>
+    <button (click)="onPageforward($event)" name='2' class="p-2 px-3 text-blue-400 border-2 border-gray-400">2</button>
+    <button (click)="onPageforward($event)" name='3' class="p-2 px-3 text-blue-400 border-2 border-gray-400">3</button>
+    <button (click)="onPageforward($event)" name='4' class="p-2 px-3 text-blue-400 border-2 border-gray-400">4</button>
+    <button (click)="onPageforward($event)" name='5' class="p-2 px-3 text-blue-400 border-2 border-gray-400">5</button>
+    <button (click)="onPageforward($event)" name='6' class="p-2 px-3 text-blue-400 border-2 border-gray-400">6</button>
+    <button (click)="onPageforward($event)" name='7' class="p-2 px-3 text-blue-400 border-2 border-gray-400">7</button>
+    <button (click)="onPageforward($event)" name='8' class="p-2 px-3 text-blue-400 border-2 border-gray-400">8</button>
+    <button (click)="onPageforward($event)" name='9' class="p-2 px-3 text-blue-400 border-2 border-gray-400">9</button>
+    <button (click)="onPageforward($event)" name='10' class="p-2 px-3 text-blue-400 border-2 border-gray-400">10</button>
+    <button (click)="onPageforward($event)" name='>' class="p-2 px-3 text-blue-400 border-2 border-gray-400">></button>
+</div>
